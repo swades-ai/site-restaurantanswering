@@ -1,11 +1,11 @@
 {
-  "name": "Brand",
-  "vertical": "its buyers",
+  "name": "RestaurantAnswering",
+  "vertical": "restaurants",
   "url": "http://localhost:4321",
   "positioning": "",
-  "summary": "",
-  "indexnowKey": "",
+  "summary": "Drafted from the site's own published copy (homepage + pricing) as the site-builder test — every number is the site's own claim. Rewrite freely.",
+  "indexnowKey": "041e1648720f5ce2fbc4b19cceb93345",
   "turnstileSiteKey": "",
-  "inboundUrl": "",
+  "inboundUrl": "https://studio.swades.ai/api/inbound/XRaBnLa0wYZOXh-bT7IitJRwLOBBqYXg",
   "bookingUrl": ""
 }

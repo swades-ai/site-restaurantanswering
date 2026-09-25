@@ -1,0 +1,109 @@
+---
+title: "Restaurant Phone Terms: Voice AI Glossary for Buyers"
+description: "Definitions of the phone, POS and voice AI terms restaurant buyers compare, from order accuracy to waitlist management, with examples for each."
+pageType: "glossary"
+schemaType: "FAQPage"
+publishedAt: "2026-09-25"
+updatedAt: "2026-09-25"
+brand: "RestaurantAnswering"
+faq:
+  - q: "What does \"order accuracy\" actually measure, and how do I verify a vendor's claim?"
+    a: "Order accuracy is the share of calls where the item, modifiers, quantity and price captured match what the caller said. It is not transcription quality, because a clean transcript that drops \"no onions\" is still a wrong order. RestaurantAnswering states 95% order accuracy. To verify it, run a trial during your busiest two-hour window and compare the system's tickets against the audio for the same calls, counting any ticket the kitchen had to correct as inaccurate. Ask for the definition in writing, since some vendors count a call as accurate if the order was placed at all."
+  - q: "Is per-minute pricing cheaper than paying staff to answer the phone?"
+    a: "It depends on your call volume and your wage rate, and the comparison is rarely apples to apples. Per-minute pricing scales with calls, while staff cost is fixed per shift whether the phone rings or not. RestaurantAnswering plans start at $29/month for 100 minutes included, with volume pricing as low as $0.08/min. Work out your monthly connected minutes from last month's phone bill, apply the vendor's blended rate including overage, and compare that against the hours you currently pay someone to sit near a ringing phone. Include the calls you miss today, since those are the ones the maths usually turns on."
+  - q: "What happens if the AI gets a menu item or price wrong?"
+    a: "That risk is managed by the integration, not by the model. RestaurantAnswering connects directly with your POS, reservation platforms and phone provider, so item names, prices, modifiers and availability come from your live menu rather than a static script. The failure mode to test is sync lag: when the kitchen 86s an item, how long before the phone system stops offering it, and what happens if the POS goes offline mid-service. Ask for the fallback behaviour in writing, and check whether the system can hand a call to a human when it is unsure rather than guessing."
+  - q: "Does the AI handle reservations and waitlists, or only takeout orders?"
+    a: "It handles both, but they are different jobs and you should test them separately. Reservations require the system to read your real availability and write into your reservation platform, or it will overbook you. Waitlists require it to quote a wait based on current table turns and update the guest when the table is ready. RestaurantAnswering answers every call 24/7 and covers phone orders, reservations, waitlists, menu and hours questions, catering and after-hours coverage. During a trial, book a party of six for a peak slot and join a walk-in waitlist, then check both landed correctly in your own systems."
+  - q: "Which plan includes SOC 2, HIPAA and GDPR compliance?"
+    a: "RestaurantAnswering lists SOC 2, HIPAA & GDPR compliance on the Enterprise plan, so the attestation is not carried by the entry plans. If you take card payments over the phone, operate locations in the EU, or handle health-related information such as allergy details, confirm before signing which plan carries the specific framework you need and whether a signed agreement is available. Also ask how card data is handled at all: the safest configuration is for payment to be captured by your existing processor so the voice system never stores the number, which keeps it out of PCI scope entirely."
+---
+## Why restaurant phone terminology matters when you compare vendors
+
+Most restaurant voice AI vendors describe the same product with different words, so two quotes can look identical and mean different things. A vendor that says "takes orders" may not touch your POS; one that says "integrated" may only push a ticket to a printer. This glossary defines the terms as they are used in restaurant phone work, so you can read a proposal and know what you are buying. Where a term has a measurable definition, that definition is the one to hold the vendor to in writing.
+
+### Answering service vs. voice AI
+
+A traditional answering service puts a human in a call centre on your line; a voice AI answers on your own number and completes the task itself. The practical difference is what happens after the greeting: a call centre reads from your script and takes a message, while a system like RestaurantAnswering answers every call 24/7 and can place the order or hold the table. Ask which one you are being quoted, because the pricing models are not comparable.
+
+## Order and reservation terms
+
+These are the words that decide whether a call becomes revenue or a note on a pad.
+
+### Phone order
+
+A to-go or pickup order placed by voice rather than through a delivery marketplace or your own web ordering. The order has to be built from your real menu, with modifiers and current pricing, or the kitchen receives something it cannot make. Example: a caller asks for a large pepperoni with extra cheese and a side of ranch; a phone order system confirms the size, the modifier and the total before hanging up.
+
+### Order accuracy
+
+The share of calls where the item, modifiers, quantity and price captured by the system match what the caller actually said. RestaurantAnswering states 95% order accuracy, which is the number to test against your own call recordings during a trial. Accuracy is not the same as transcription quality: a perfect transcript that drops a modifier is still an inaccurate order.
+
+### Reservation booking
+
+Capturing a date, time, party size and guest details and writing them into your reservation platform, not a separate inbox. Example: a party of six for Friday at 7:30pm should appear in the same book your host uses, with the same table availability rules. If the system cannot see your availability, it will overbook you.
+
+### Waitlist management
+
+Taking a name and party size for walk-in seating and quoting an accurate wait, then updating the guest when the table is ready. This is distinct from reservations because the table is not held in advance. Example: a four-top quoted 25 minutes at 6pm should be seated close to that, which requires the system to read your current table turns rather than a fixed estimate.
+
+### After-hours call
+
+Any call that arrives outside your posted kitchen or phone hours, including the last hour of service when staff stop picking up. These calls are the ones most often lost entirely, and they are the reason after-hours coverage is priced separately by most vendors. See [after hour call handling](/after-hour-call-handling/) for how the handoff is usually configured.
+
+### Missed call
+
+A call that rings out, hits voicemail, or is abandoned while on hold. A missed call is not the same as an unanswered one: a caller who hangs up after 40 seconds of ringing is missed even though your phone system logged a ring. Recovering these is the core commercial argument for voice AI, and RestaurantAnswering claims it recovers $30k+ in annual revenue from missed and after-hours calls.
+
+## Integration and platform terms
+
+### POS integration
+
+A connection that lets the phone system read your menu, prices, modifiers and item availability, and write orders back into the till. RestaurantAnswering connects directly with your POS, reservation platforms and phone provider, which is what separates a live menu from a static script. Without it, every menu change has to be made twice.
+
+### Menu sync
+
+The mechanism that keeps item names, prices and 86'd items current between your POS and the phone system. Example: when the kitchen 86s the short rib at 8pm, the phone system should stop offering it on the next call. Ask how often sync runs and what happens when the POS is offline.
+
+### Phone provider
+
+The carrier or VoIP service that owns the number your guests dial. Voice AI can sit in front of your existing number or replace it, and the choice affects porting time, call recording and whether your current provider still bills you. See [integrations](/integrations/) for the platforms typically connected.
+
+### Call reporting
+
+Logs of call volume, duration, outcome and order value, broken out by hour and location. This is the evidence you use to decide whether the system is paying for itself, so ask for the raw export rather than a dashboard screenshot. [Analytics call reporting](/analytics-call-reporting/) covers the metrics worth tracking.
+
+### Multi-location routing
+
+Sending each call to the correct location's menu, hours and staff rather than a single shared script. Franchise groups need this because a caller who reaches the wrong store gets quoted the wrong price. [Franchise call inconsistency](/franchise-call-inconsistency/) deals with the operational side of the same problem.
+
+## Commercial and compliance terms
+
+### Per-minute pricing
+
+Billing based on connected call minutes rather than per call or per order. RestaurantAnswering plans start at $29/month for 100 minutes included, with volume pricing as low as $0.08/min, so the effective rate falls as volume rises. Compare vendors on the blended rate at your actual monthly minutes, not the headline rate.
+
+### Included minutes
+
+The call minutes bundled into the base plan before overage applies. A restaurant with 100 minutes included and 400 minutes of real call volume pays overage on 300 minutes, which is why the base price alone tells you very little. Estimate your minutes from last month's phone bill before comparing plans.
+
+### Overage rate
+
+The per-minute charge once included minutes are used. Overage rates vary by plan and by vendor, and a low base price with a high overage rate can cost more than a higher base with generous minutes. Ask for the overage rate in writing next to the included minutes.
+
+### Response time
+
+The delay between the caller finishing their first sentence and the system responding. RestaurantAnswering states it answers in under a second, which matters because callers hang up on silence faster than on a wrong answer. Test this on a mobile call, not a desk phone.
+
+### SOC 2, HIPAA & GDPR compliance
+
+Independent audit and regulatory frameworks covering how caller data, recordings and payment details are stored and transferred. RestaurantAnswering lists SOC 2, HIPAA & GDPR compliance on the Enterprise plan, so if you take card payments by phone or operate in the EU, confirm which plan carries the attestation you need before signing.
+
+### PCI scope
+
+How card data is handled when a caller pays by phone. The safest configuration is for the payment to be captured by your existing processor so the voice system never stores the number. Ask whether the vendor is in scope at all, and if so, which plan covers it.
+
+## How to use this glossary in a vendor comparison
+
+Write the vendor's answers next to each term above and the differences stop hiding. Two proposals that both say "AI phone answering" diverge sharply on POS integration, overage rate and after-hours coverage, and those three items usually decide the annual cost. Run a one-week trial on your busiest shift and check order accuracy against your own tickets before you commit to a term.
+
+If you are still narrowing the field, the [comparison](/comparison/) page sets out how the common options differ, and [eliminate missing phone orders](/eliminate-missing-phone-orders/) covers the recovery side in more detail.

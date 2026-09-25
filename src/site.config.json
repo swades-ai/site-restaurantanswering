@@ -1,8 +1,8 @@
 {
   "name": "RestaurantAnswering",
   "vertical": "restaurants",
-  "url": "http://localhost:4321",
-  "stageUrl": "",
+  "url": "https://restaurantanswering.swades.ai",
+  "stageUrl": "https://restaurantanswering.swades.ai",
   "live": false,
   "positioning": "",
   "summary": "Drafted from the site's own published copy (homepage + pricing) as the site-builder test — every number is the site's own claim. Rewrite freely.",

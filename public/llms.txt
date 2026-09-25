@@ -24,6 +24,7 @@ RestaurantAnswering is an AI answering service for restaurants that answers call
 - [Pricing](https://restaurantanswering.swades.ai/pricing/)
 - [After hour call handling](https://restaurantanswering.swades.ai/after-hour-call-handling/)
 - [After hours voicemail script template](https://restaurantanswering.swades.ai/after-hours-voicemail-script-template/)
+- [AI Answering for Restaurants: 24/7 Call Use Case Guide](https://restaurantanswering.swades.ai/how-restaurants-use-it/): What happens to restaurant phone calls during a rush, after close and on catering enquiries — and what changes when an AI answering layer takes them.
 - [Aiphone answering](https://restaurantanswering.swades.ai/aiphone-answering/)
 - [Allergy script template](https://restaurantanswering.swades.ai/allergy-script-template/)
 - [American restaurant](https://restaurantanswering.swades.ai/american-restaurant/)

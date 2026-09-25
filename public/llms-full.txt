@@ -91,6 +91,7 @@ RestaurantAnswering is an AI answering service for restaurants that answers call
 ## Blog
 
 - [Best Software for Restaurants: 2025 Buyer's Guide to Picking](https://restaurantanswering.swades.ai/blog/best-tools-for-restaurants/): How to compare the best software for restaurants in 2025: phone answering, POS, reservations and waitlists, with real pricing and integration questions.
+- [Restaurant Answering Benchmarks: Missed Call Revenue Data](https://restaurantanswering.swades.ai/blog/benchmarks-for-restaurants/): Benchmarks for restaurant phone answering: missed-call revenue, order accuracy, response time, and what AI answering costs per minute versus staffing.
 
 ---
 

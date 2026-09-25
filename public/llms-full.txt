@@ -74,6 +74,7 @@ RestaurantAnswering is an AI answering service for restaurants that answers call
 - [Privacy](https://restaurantanswering.swades.ai/privacy/)
 - [Reservation management](https://restaurantanswering.swades.ai/reservation-management/)
 - [Reservation script template](https://restaurantanswering.swades.ai/reservation-script-template/)
+- [Restaurant Integrations: POS, Reservations & Phone Systems](https://restaurantanswering.swades.ai/works-with-the-software-restaurants-already-run/): How RestaurantAnswering connects directly with your POS, reservation platforms and phone provider, what each integration does, and how setup works.
 - [Restaurants Pricing: What an AI Answering Service Costs](https://restaurantanswering.swades.ai/pricing-for-restaurants/): How restaurants pricing works for AI phone answering: metered minutes, what changes the bill, what is included, and how it compares with staffing a phone line.
 - [Steakhouse](https://restaurantanswering.swades.ai/steakhouse/)
 - [Sushi restaurant](https://restaurantanswering.swades.ai/sushi-restaurant/)
@@ -84,3 +85,10 @@ RestaurantAnswering is an AI answering service for restaurants that answers call
 - [Use cases](https://restaurantanswering.swades.ai/use-cases/)
 - [Vietnamese restaurant](https://restaurantanswering.swades.ai/vietnamese-restaurant/)
 - [Waitlist management](https://restaurantanswering.swades.ai/waitlist-management/)
+
+---
+
+## Restaurants Pricing: What an AI Answering Service Costs
+https://restaurantanswering.swades.ai/pricing-for-restaurants/
+
+You are billed by talk time, not by call count. A monthly plan includes a block of minutes, and every call the AI handles — a to-go order, a reservation, a waitlist check, a question about hours — draws down that block. Plans start at $29/month for 100 included minutes, and the published rate falls as low as $0.08/min at volume. There is no per-seat charge, because the AI answers every call 24/7 rather than routing callers into a queue.

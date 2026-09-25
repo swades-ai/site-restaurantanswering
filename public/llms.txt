@@ -74,6 +74,7 @@ RestaurantAnswering is an AI answering service for restaurants that answers call
 - [Privacy](https://restaurantanswering.swades.ai/privacy/)
 - [Reservation management](https://restaurantanswering.swades.ai/reservation-management/)
 - [Reservation script template](https://restaurantanswering.swades.ai/reservation-script-template/)
+- [Restaurant Integrations: POS, Reservations & Phone Systems](https://restaurantanswering.swades.ai/works-with-the-software-restaurants-already-run/): How RestaurantAnswering connects directly with your POS, reservation platforms and phone provider, what each integration does, and how setup works.
 - [Restaurants Pricing: What an AI Answering Service Costs](https://restaurantanswering.swades.ai/pricing-for-restaurants/): How restaurants pricing works for AI phone answering: metered minutes, what changes the bill, what is included, and how it compares with staffing a phone line.
 - [Steakhouse](https://restaurantanswering.swades.ai/steakhouse/)
 - [Sushi restaurant](https://restaurantanswering.swades.ai/sushi-restaurant/)

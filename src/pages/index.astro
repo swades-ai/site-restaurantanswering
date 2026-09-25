@@ -1,8 +1,47 @@
 ---
 import { getCollection, render } from "astro:content";
+import site from "../site.config.json";
+import Base from "../layouts/Base.astro";
 import Page from "../layouts/Page.astro";
+import Waitlist from "../components/Waitlist.astro";
+
+// The home page is the landing entry when Studio OS has written one. When it
+// has not, this used to render the words "Nothing published yet" — on a site
+// with seven live pages behind it, which is a lie about the site and reads as
+// a broken deploy. A site with pages has a home page: the brand, what it is,
+// and every page it has, which is also the internal-link graph those pages
+// need on day one.
 const entries = await getCollection("landing");
 const entry = entries[0];
 const Content = entry ? (await render(entry)).Content : null;
+
+const [pages, posts] = entry ? [[], []] : await Promise.all([getCollection("pages"), getCollection("posts")]);
+const listed = [
+  ...pages.map((p) => ({ href: `/${p.id}/`, title: p.data.title, description: p.data.description, kind: p.data.pageType })),
+  ...posts.map((p) => ({ href: `/blog/${p.id}/`, title: p.data.title, description: p.data.description, kind: p.data.pageType })),
+].sort((a, b) => a.title.localeCompare(b.title));
 ---
-{entry && Content ? <Page entry={entry} path="/"><Content /></Page> : <html><body><p>Nothing published yet.</p></body></html>}
+{entry && Content ? (
+  <Page entry={entry} path="/"><Content /></Page>
+) : (
+  <Base title={site.name} description={site.positioning || site.summary || site.name} canonical="/" jsonld={[{ "@context": "https://schema.org", "@type": "WebSite", name: site.name, url: site.url }]}>
+    <h1>{site.name}</h1>
+    {(site.positioning || site.summary) && <p class="lede">{site.positioning || site.summary}</p>}
+    {listed.length > 0 ? (
+      <>
+        <h2>Pages</h2>
+        <ul>
+          {listed.map((p) => (
+            <li>
+              <a href={p.href}>{p.title}</a>
+              {p.description && <> — {p.description}</>}
+            </li>
+          ))}
+        </ul>
+      </>
+    ) : (
+      <p>This site is being written. Its pages will appear here as they are published.</p>
+    )}
+    <Waitlist />
+  </Base>
+)}

@@ -1,0 +1,131 @@
+---
+title: "Restaurant Answering Service Zanus: AI Call Handling"
+description: "How RestaurantAnswering handles restaurant calls: 24/7 answering, POS-connected orders, reservations and waitlists, what it costs and what to test first."
+pageType: "article"
+keyword: "restaurant answering service zanus"
+schemaType: "FAQPage"
+publishedAt: "2026-11-17"
+updatedAt: "2026-11-17"
+brand: "RestaurantAnswering"
+faq:
+  - q: "How does the AI handle an order with several modifiers and a substitution?"
+    a: "It reads the live menu from your POS, so it can only offer modifiers that are actually enabled and priced. When a caller asks for extra cheese, no onions, or a swap, the AI applies each change against the real item configuration, then reads the whole order back with the total for confirmation before sending it. If a requested change is not available, it says so and offers what is. Nothing is sent to the kitchen until the caller confirms, which is what keeps the error rate down. The practical test is to call your own number and order something awkward, then check what lands in the POS."
+  - q: "What happens when the AI cannot understand the caller or the request?"
+    a: "It asks for clarification first, which resolves most bad-line and noisy-background cases. If it still cannot proceed, it follows the rule you set for that time of day: transfer to a named number, or take a message with the caller's details. You can make the rules as specific as you like — for example, transfer anything about a large party during service, take a message after close. The important thing to test is that the transfer destination actually rings a phone someone answers, because a fallback path that goes nowhere is worse than no fallback at all."
+  - q: "Does it work with my POS and reservation system?"
+    a: "It connects directly with your POS, reservation platforms and phone provider, and the supported list is on our Integrations page. The POS connection is what lets the AI quote real prices and stop offering an item once it is 86'd; the reservation connection is what stops it double-booking a slot. If your system is not supported yet, the fallback is a message or a transfer rather than a guess, and our team can look at adding the integration. Legacy POS and house reservation systems are the cases most likely to affect your go-live date, so raise them early."
+  - q: "How is the bill calculated, and what makes it go up?"
+    a: "There are two parts: a monthly plan with a block of included minutes, and metered minutes beyond that block. Plans start at $29/month for 100 minutes, with additional minutes metered at $0.13/month on Pro and $0.15/month on Business, so the effective rate falls as volume rises. Phone numbers are $1.50/month per unit per month. Call length drives the bill far more than call count — a menu question is seconds, a four-item order with modifiers is a minute or more. Estimate from your busiest week, not your average."
+  - q: "Can it handle calls across several locations with different menus?"
+    a: "Yes. Each location keeps its own menu, hours and availability, and the AI answers from the data for the location the call belongs to. That is the main commercial argument for multi-location groups: ten sites following the same script produce ten different answers, while one system reading from ten menus produces the same answer ten times. You manage the locations from one place, and you can set different transfer rules per site. If a group runs genuinely different concepts under one number, tell us during setup, because routing has to be configured deliberately rather than assumed."
+  - q: "What are the limits — what should I not use this for?"
+    a: "It is built for transactions: orders, reservations, waitlists, menu and hours questions, catering capture and after-hours coverage. It is not a decision-maker. Complaints that need a manager, bespoke event bookings, supplier calls and anything requiring judgement are transferred or messaged rather than resolved. It also needs something accurate to read from — if your menu and bookings live on paper, the AI has nothing reliable to quote. If most of your calls are bespoke conversations rather than transactions, a human answering service or extra staff is the better fit, and that is a legitimate choice."
+---
+
+<span data-studio-release="7db84e7172b7866d4dcdfbdb034c5a55c1904ccd6e955c6c20ea6bb3cd7c3197" hidden></span>
+RestaurantAnswering is an AI answering service for restaurants that answers every call 24/7, takes phone orders, books reservations and manages waitlists without adding staff. It connects directly with your POS, reservation platforms and phone provider, so the menu items, prices, modifiers and availability a caller hears are the ones in your system at that moment.
+
+## What a call actually looks like
+
+The caller dials your existing number. The AI picks up, greets with your restaurant name, and works out what the caller wants before deciding what to do with it. A takeaway order, a table for four on Friday, a place on the waitlist, a question about whether the kitchen is still open, or a catering enquiry all arrive on the same line and are routed differently.
+
+For an order, the AI reads the items back with modifiers and the total, then confirms. For a reservation, it checks the book for the requested slot and either books it or offers the nearest alternative. For a waitlist, it takes the party size and name and gives an estimate. For a question it cannot answer from your data, it takes a message or transfers to a person, depending on the rule you set for that time of day.
+
+Two things matter more than the conversation itself. First, the AI never invents a dish: if an item is off the menu or a modifier is disabled, it cannot offer it. Second, the order lands in the systems you already run rather than in a separate inbox someone has to re-key. That second point is where most of the labour saving sits, and it is also the part worth testing hardest before you commit.
+
+## Where the calls come from, and what they cost you now
+
+Missed calls are not evenly spread. They cluster in the twenty minutes either side of the lunch and dinner peaks, when the same two people are seating guests, running food and answering the phone. They also cluster after close, when nobody is there at all.
+
+A restaurant that misses a handful of calls a night is not losing a handful of transactions. It is losing the orders those calls would have become, and the caller rarely rings back — they order from the next place on the list. The same applies to a reservation request that goes to voicemail at 9pm: by the time anyone listens, the table is booked elsewhere.
+
+This is the case for answering after hours as well as during service. Our [After hour call handling](/after-hour-call-handling/) page covers the specific pattern of late calls, and [Eliminate missing phone orders](/eliminate-missing-phone-orders/) deals with the order side. If you want to hear what a good out-of-hours greeting sounds like before you configure one, the [After hours voicemail script template](/after-hours-voicemail-script-template/) is a useful starting point.
+
+## How the integration works in practice
+
+RestaurantAnswering connects directly with your POS, reservation platforms and phone provider. In practice that means three separate connections, and it is worth understanding which does what.
+
+The phone connection carries the call. You keep your existing number and forward it, or point your provider at us. No hardware changes and no new handsets.
+
+The POS connection carries the order. The AI reads your live menu — items, prices, modifiers, availability — and writes the finished order back. If a dish is 86'd mid-service, the AI stops offering it as soon as the POS says so.
+
+The reservation connection carries the book. The AI checks real availability rather than a fixed rule, so it will not double-book a slot that is already taken.
+
+Where a system is not yet supported, the fallback is a message or a transfer rather than a guess. The [Integrations](/integrations/) page lists what is supported today. If your stack is unusual — a legacy POS, a house reservation system, a phone provider with its own routing — say so before you start, because that is the variable most likely to change your go-live date.
+
+## What it handles, and what it does not
+
+The scope is deliberately narrow: the calls a restaurant actually receives, handled end to end.
+
+- Phone orders with modifiers, read back and confirmed before they are sent.
+- Reservations checked against live availability.
+- Waitlist additions with party size and estimated wait.
+- Menu, hours, allergen and location questions answered from your own data.
+- Catering enquiries captured with contact details and passed on.
+- After-hours coverage, when the alternative is a voicemail nobody hears until morning.
+
+What it does not do is make judgement calls a manager would make. A complaint that needs a decision, a large event booking with a bespoke menu, a supplier calling about a delivery — these are transferred or messaged, not resolved. The AI is a filter and a first responder, not a replacement for a manager on the floor.
+
+It is also not a substitute for a reservation platform you do not have. If your bookings live in a paper diary, the AI can take the request and pass it on, but it cannot check availability it cannot see.
+
+## Pricing, and what drives the bill
+
+The bill has two parts: a monthly plan that includes a block of minutes, and metered minutes beyond that block. Plans start at $29/month for 100 minutes included. Additional minutes are metered at $0.13/month on the Pro plan and $0.15/month on the Business plan, so the effective rate falls as volume rises. Phone numbers are $1.50/month per unit per month.
+
+What actually drives the number is call length, not call count. A menu question is seconds. An order with four items and two modifiers is a minute or more. A reservation is somewhere between. So the useful exercise before choosing a plan is to estimate your monthly minutes, not your monthly calls: take your busiest week, count the calls you currently miss, and multiply by a realistic average length.
+
+There is no charge for the core features — order taking, reservations, waitlists and answering — beyond the minutes they consume. There is no setup fee on standard plans. You can change plan as volume changes, which matters because restaurant call volume is seasonal and a plan sized for December will be oversized in February.
+
+## Choosing between this and the alternatives
+
+There are three realistic options for a restaurant that cannot keep up with the phone: hire, outsource to a human answering service, or automate.
+
+| | RestaurantAnswering | Human answering service | Extra staff |
+|---|---|---|---|
+| Hours covered | 24/7 | Usually business hours, premium for nights | Shift-dependent |
+| Knows your menu | Reads it live from your POS | Only if you supply and update it | Yes, once trained |
+| Writes orders to your POS | Yes | Rarely | Yes |
+| Cost behaviour | Per minute, falls with volume | Per call or per minute, flat | Per hour, fixed |
+| Scales at peak | Immediately | Limited by their staff | Not without hiring |
+| Handles judgement calls | No — transfers | Sometimes | Yes |
+
+A human answering service is the closest comparison and the one most restaurants have already tried. The difference is not politeness; it is data. A human operator reading from a script you emailed them last year will quote last year's prices. An operator with no POS access cannot tell a caller that the sea bass is off tonight. That gap is where order errors and callbacks come from, and it is the specific problem the POS connection exists to close.
+
+The honest limitation of the automated option is the bottom row of that table. Anything requiring a decision goes to a person. If your calls are mostly decisions rather than transactions, this is the wrong tool.
+
+## What to test before you commit
+
+Do not evaluate this on a demo call. Evaluate it on your own menu, on a bad line, at your busiest hour.
+
+- Call your own number and order something with two modifiers and a substitution. Check what arrives in the POS.
+- Ask for a table at a time you know is full. The AI should offer an alternative, not confirm.
+- Ask about an allergen. The answer must come from your data, not from general knowledge.
+- Call after close and see what the greeting says.
+- Mumble. Use a noisy background. See whether it asks for clarification or guesses.
+- Check the transfer path actually rings a phone that someone answers.
+
+Run those six before you forward your main line. Most problems surface in the first two.
+
+## Who this suits
+
+It suits quick service, fast casual and multi-location groups whose phones overwhelm staff during peak hours — the case where the phone is a transaction channel and the bottleneck is that nobody can reach it. It suits restaurants with a POS that is already integrated, because that is where the accuracy comes from.
+
+It suits multi-location groups for a different reason: consistency. Ten sites following the same script produce ten different answers. One system reading from ten menus produces the same answer ten times, and the [Franchise call inconsistency](/franchise-call-inconsistency/) page sets out why that matters commercially.
+
+It suits restaurants with a heavy after-hours call pattern, where the alternative is genuinely nothing.
+
+## Who it does not suit
+
+It does not suit a restaurant whose calls are mostly bespoke — private dining, events, large catering — where every conversation needs a person. It does not suit a venue with no digital menu or POS to read from, because the AI would have nothing accurate to say. It does not suit a restaurant that wants a human voice on the line as a matter of brand, which is a legitimate position and not one this product argues with.
+
+If you are in one of those groups, a human answering service or an extra member of staff is the better answer, and the comparison table above is still the right framework for choosing between them.
+
+## Getting started
+
+The setup is: forward your number, load your menu and hours, set your transfer rules, then test. Most of the work is in the menu data, because that is what the AI reads from. If your POS integration is live, the menu is already there.
+
+Start on the smallest plan that covers your estimated minutes and move up when the metered overage tells you to. There is no long-term contract. If you want to see how the call handling works before configuring anything, the [High volume call handling](/high-volume-call-handling/) page describes the peak-hour behaviour in more detail.
+
+## Compliance and data
+
+SOC 2, HIPAA & GDPR compliance is available on the Enterprise plan. Call recordings and transcripts are handled under that plan's terms; if you need a specific data residency or retention arrangement, raise it before go-live rather than after. Payment card details are not stored by the AI — card payments are handled by your existing payment path.

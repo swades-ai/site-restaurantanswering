@@ -1,0 +1,121 @@
+---
+title: "Restaurants Voice AI: How AI Phone Answering Works"
+description: "How restaurants voice AI answers calls 24/7, takes orders and books tables, what it connects to, and what a monthly bill actually depends on."
+pageType: "article"
+keyword: "restaurants voice ai"
+schemaType: "Article"
+publishedAt: "2026-11-17"
+updatedAt: "2026-11-17"
+brand: "RestaurantAnswering"
+faq:
+  - q: "How accurate is restaurants voice AI at taking a phone order?"
+    a: "RestaurantAnswering publishes a response time under one second. Accuracy is not uniform across all calls: simple orders and hours questions score higher than heavily modified orders with substitutions, removals and half portions. The practical test is your own menu. Take the ten items your regulars modify most and run those through a trial before you commit to a plan. If the agent mishears a modifier, the failure mode matters as much as the rate — a good agent repeats the order back and transfers to a human when it is unsure rather than guessing."
+  - q: "Does it work with my POS and reservation system?"
+    a: "It connects directly with your POS, reservation platforms and phone provider, using real menu items, pricing, modifiers and availability in real time. That means orders arrive as tickets in the system your kitchen already reads, and bookings land in the same reservation book your host uses. You do not retype anything. The supported list changes, so check the integrations page for your specific POS and reservation platform before you buy, and confirm whether your phone provider is supported or whether you forward calls to a new number instead."
+  - q: "What does it cost per month, and what is not included?"
+    a: "Plans start at $29/month for 100 minutes included, with volume-based pricing as low as $0.15/month per minute. Minutes above your plan are metered: published overage rates include $0.13/month per minute on Pro and $0.12/month per minute on Agency. Phone numbers are billed separately at $1.50/month per number per month. The variable that decides your bill is call volume, not restaurant size. A takeout-heavy restaurant taking dozens of phone orders a night will use far more minutes than one that mostly answers reservation and hours questions."
+  - q: "Is it compliant enough to take payment or health information over the phone?"
+    a: "RestaurantAnswering states SOC 2, HIPAA & GDPR compliance on the Enterprise plan. That distinction matters: the certifications are listed against Enterprise, not the entry-level plans. If your calls involve payment card details, or dietary and allergy notes that count as health information, confirm the plan tier in writing before you sign. If you do not take payment over the phone and your callers only ask about hours, menus and tables, the compliance tier is less of a constraint and the entry plan may be sufficient."
+  - q: "What happens to a call the AI cannot handle?"
+    a: "The agent should transfer to a human rather than improvise. Ask any vendor, including this one, what the transfer path is and who answers at 11pm when your staff have gone home. For a restaurant with no overnight staff, the realistic options are a transfer to an on-call manager, a message taken for a callback, or a transfer to a human answering service. Decide which you want before deployment, because the default behaviour is what your callers will experience on the first night something unusual happens."
+  - q: "Will it replace my host or counter staff?"
+    a: "No. It takes the calls your staff cannot reach during peak hours, which is the specific problem it is built for. A host who spends four minutes explaining the menu is not seating the party waiting at the door, and a counter server on the phone is not serving the line. Voice AI moves routine calls off the floor so staff handle the people in front of them. Restaurants with very low call volume, or menus that change daily and are not maintained digitally, get less from it than high-volume takeout operations do."
+---
+
+<span data-studio-release="f2ea7a5401c1f79e7caceb4b5175a93cc16ed2f7c4acfee1c5e2d0ba46e1fdf2" hidden></span>
+Restaurants voice AI is a phone agent that answers your restaurant's calls, takes the order or the booking, and writes it into the systems you already run. RestaurantAnswering is one such service: it answers every call 24/7 — phone orders, reservations, waitlists, menu and hours questions, catering and after-hours coverage — without adding staff.
+
+The reason operators buy it is arithmetic, not novelty. A phone ringing during the dinner rush is a phone nobody can reach, and a call that goes unanswered is an order that goes to the next listing on the results page. Voice AI does not replace your host or counter staff; it takes the calls they cannot get to.
+
+## What restaurants voice AI actually does
+
+A voice agent is not a phone tree. A phone tree asks the caller to press 1 or 2 and then drops them into a queue. A voice agent holds a conversation: it hears "two large pepperoni, one with no onion," repeats it back, confirms the total, and sends the ticket to the kitchen printer or POS.
+
+The scope is wider than order taking. The calls that hurt most are rarely the simple ones. A caller asking whether you have a table for six at 7:30 on Friday is a booking you either capture or lose, and a caller asking whether the kitchen is still open at 10:40pm is a decision made in your favour or against it.
+
+### Order taking
+
+The agent reads from your live menu, so it quotes real items, real prices and real modifiers. If a pizza comes in three sizes and the caller asks for the middle one with extra cheese, the agent prices it correctly rather than guessing. It handles the awkward parts too: removing an item, adding a side, repeating the order before it is submitted.
+
+### Reservations and waitlists
+
+Bookings go into your reservation platform rather than a notebook at the host stand. When the caller asks for a time you cannot seat, the agent can offer the nearest available slot or add them to the waitlist. That is the difference between a booking and a hang-up.
+
+### After-hours coverage
+
+Most independent restaurants stop answering somewhere between 9pm and 11pm. Calls after that are either tomorrow's reservations or lost orders. The agent keeps answering, which is where the recovered-revenue claim comes from. For the specific case of calls that arrive after close, see [after hour call handling](/after-hour-call-handling/). If you are drafting what your own voicemail should say in the meantime, there is an [after hours voicemail script template](/after-hours-voicemail-script-template/).
+
+### Menu, hours and directions questions
+
+These consume the most staff time per dollar of value. The agent answers them from your own data, so your host does not have to stop seating people to say "we close at ten."
+
+## How it connects to the systems you already run
+
+A voice agent that cannot write to your POS is a transcription service. RestaurantAnswering is restaurant voice AI that connects directly with your POS, reservation platforms and phone provider, using real menu items, pricing, modifiers and availability in real time.
+
+That sentence is the whole integration story, and it is worth unpacking because it is where most deployments succeed or fail.
+
+- **POS.** Orders land as tickets, not as a text message someone has to retype. If your POS supports online ordering, the agent usually writes through the same channel.
+- **Reservation platforms.** Bookings appear in the same book your host uses, so double-booking is a platform problem rather than a phone problem.
+- **Phone provider.** The agent sits on your existing number, or on a new one you forward to. You do not have to change carriers to try it.
+- **Menu source.** Items, prices and modifiers come from your menu data, so a price change propagates to the phone without a script rewrite.
+
+See the [integrations page](/integrations/) for the current list of supported systems, and [analytics call reporting](/analytics-call-reporting/) for what you can see after the calls are handled.
+
+## What it costs, and how the pricing is structured
+
+RestaurantAnswering prices on minutes, not on seats or locations. Plans start at $29/month for 100 minutes included, with volume-based pricing as low as $0.15/month per minute. The Starter plan is the entry point; Business and Pro tiers raise the included minutes and add features.
+
+Above the included minutes, usage is metered. Published overage rates include $0.12/month per minute on Agency and $0.13/month per minute on Pro. Phone numbers are billed separately at $1.50/month per number per month.
+
+### What drives your monthly bill
+
+The variable is call volume, not table count. A 60-seat restaurant that takes 40 phone orders a night will spend more than a 200-seat restaurant that takes reservations only. Two numbers decide the bill:
+
+1. **Minutes included in the plan.** 100 minutes is roughly 30 to 50 short calls, depending on how much callers talk.
+2. **Overage rate.** The gap between $0.13/month and $0.12/month per minute is small per call and large per month at volume.
+
+If your calls are mostly reservations and hours questions, the entry plan is usually enough. If you run phone-heavy takeout, model the minutes before you commit.
+
+## Where voice AI fits against the alternatives
+
+There are four ways a restaurant handles a ringing phone. They are not mutually exclusive, and most operators end up combining two of them.
+
+| Approach | Answers at 2am | Takes a full order | Cost shape |
+|---|---|---|---|
+| Staff answers | No | Yes | Hourly wages, plus the cost of pulled-away staff |
+| Voicemail | Yes | No | Free, and most callers hang up |
+| Human answering service | Sometimes | Partly | Per-minute or per-call, priced for coverage hours |
+| Restaurants voice AI | Yes | Yes | Monthly plan plus metered minutes |
+
+The honest comparison is against staff time, not against voicemail. A host who spends four minutes on a menu question is not seating the party waiting at the door. Voice AI moves those calls off the floor.
+
+## What to check before you buy
+
+Ask four things of any vendor, including this one.
+
+**Accuracy on your menu, not a demo menu.** Test it with your ten most-modified items — the ones with swaps, removals and half-portions. That is where accuracy claims break.
+
+**What happens when the agent is unsure.** A good agent transfers to a human rather than guessing. Ask what the transfer path is and who picks up at 11pm.
+
+**Where the order lands.** If the answer is "we email you a summary," the agent is not integrated. It should write to your POS or reservation book.
+
+**What the contract allows.** Month-to-month versus annual, and what happens to your phone number if you leave. The number is the asset; make sure you keep it.
+
+### Compliance and data handling
+
+RestaurantAnswering states SOC 2, HIPAA & GDPR compliance on the Enterprise plan. Compliance posture matters most if you take payment details over the phone or handle health-related information in catering or dietary notes. If you need those certifications, confirm the plan tier before signing — they are listed as Enterprise, not entry-level.
+
+## Who this suits, and who it does not
+
+It suits quick service, fast casual and multi-location groups whose phones overwhelm staff during peak hours. Multi-location groups get a second benefit: every location answers the same way, which is the problem described in [franchise call inconsistency](/franchise-call-inconsistency/).
+
+It suits restaurants with a phone-heavy takeout business, restaurants that close before their callers stop calling, and restaurants whose host stand is also the reservation desk.
+
+It suits less well if your call volume is a handful a day, if your menu changes daily and is not maintained in a digital system, or if every caller insists on speaking to the owner. Voice AI handles the routine calls; it does not replace the relationship.
+
+## Getting started
+
+The setup is a phone number, a menu, and a decision about where orders and bookings should land. Most of the work is in the menu data, because that is what the agent reads from.
+
+Start with the [comparison page](/comparison/) if you are weighing vendors, and the [blog](/blog/) for deployment notes. If you want to see the call handling in a specific scenario, [high volume call handling](/high-volume-call-handling/) covers the peak-hour case and [eliminate missing phone orders](/eliminate-missing-phone-orders/) covers the takeout case.

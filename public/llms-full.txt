@@ -91,9 +91,15 @@ RestaurantAnswering is an AI answering service for restaurants that answers call
 - [Best Software for Restaurants: 2025 Buyer's Guide to Picking](https://restaurantanswering.com/blog/best-tools-for-restaurants/): How to compare the best software for restaurants in 2025: phone answering, POS, reservations and waitlists, with real pricing and integration questions.
 - [Restaurant Answering Benchmarks: Missed Call Revenue Data](https://restaurantanswering.com/blog/benchmarks-for-restaurants/): Benchmarks for restaurant phone answering: missed-call revenue, order accuracy, response time, and what AI answering costs per minute versus staffing.
 - [Restaurant Answering Service Zanus: AI Call Handling](https://restaurantanswering.com/blog/restaurant-answering-service-zanus/): How RestaurantAnswering handles restaurant calls: 24/7 answering, POS-connected orders, reservations and waitlists, what it costs and what to test first.
+- [Restaurant Answering: What Happened at One Restaurant](https://restaurantanswering.com/blog/what-happened-at-one-of-our-restaurants/): A restaurant stopped letting calls ring out during peak hours. What the AI answering service handled, how it connects to the POS, and what it costs.
 - [Restaurants Voice AI: How AI Phone Answering Works](https://restaurantanswering.com/blog/restaurants-voice-ai/): How restaurants voice AI answers calls 24/7, takes orders and books tables, what it connects to, and what a monthly bill actually depends on.
 
 ---
+
+## Loman AI Alternative: Restaurant Phone Answering Compared
+https://restaurantanswering.com/loman-ai/
+
+Loman AI is a voice agent product aimed at restaurants, built around answering inbound calls and taking orders. In the material available to us, Loman does not publish its per-minute or per-location pricing, so we cannot state what it costs — it is not public. What is public is the category it competes in: AI phone answering for restaurants, the same job RestaurantAnswering does.
 
 ## Restaurants Pricing: What an AI Answering Service Costs
 https://restaurantanswering.com/pricing-for-restaurants/

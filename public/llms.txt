@@ -4,13 +4,16 @@
 
 RestaurantAnswering is an AI answering service for restaurants that answers calls 24/7, takes phone orders, books reservations and manages waitlists without adding staff. It answers in under a second at 95% order accuracy and recovers $30k+ in annual revenue from missed and after-hours calls. Plans start at $29 for 100 minutes, with volume pricing as low as $0.08/min.
 
+## Start here
+
+- [Restaurant Answering: AI Phone Orders & Reservations 24/7](https://restaurantanswering.com/): RestaurantAnswering is an AI answering service for restaurants that answers every call 24/7, takes phone orders, books reservations and manages waitlists.
+
 ## Comparisons
 
 - [Bland ai](https://restaurantanswering.com/bland-ai/)
 - [Kea ai](https://restaurantanswering.com/kea-ai/)
 - [Loman AI Alternative: Restaurant Phone Answering Compared](https://restaurantanswering.com/loman-ai/): Comparing Loman AI and RestaurantAnswering for restaurant phone answering: pricing, POS connection, after-hours coverage, order accuracy and when each fits.
 - [Presto ai](https://restaurantanswering.com/presto-ai/)
-- [Restaurantanswering Comparison: Minutes, Plans, Rates](https://restaurantanswering.com/null/): A restaurantanswering comparison of what each plan includes, how per-minute billing works, and what to test before you switch your restaurant phone line.
 - [Retell ai](https://restaurantanswering.com/retell-ai/)
 - [Slang ai](https://restaurantanswering.com/slang-ai/)
 - [Sound hound ai](https://restaurantanswering.com/sound-hound-ai/)

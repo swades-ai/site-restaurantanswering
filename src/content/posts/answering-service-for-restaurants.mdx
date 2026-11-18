@@ -1,0 +1,107 @@
+---
+title: "Answering Service for Restaurants: What It Handles"
+description: "An answering service for restaurants takes orders, books tables and covers after-hours calls. What it handles, how minute pricing works, what to test."
+pageType: "article"
+keyword: "answering service for restaurants"
+schemaType: "Article"
+publishedAt: "2026-11-18"
+updatedAt: "2026-11-18"
+brand: "RestaurantAnswering"
+faq:
+  - q: "How much does an answering service for restaurants cost?"
+    a: "RestaurantAnswering prices by minutes rather than by seat or per call. Plans start at $29/month with 100 included minutes, and volume pricing falls as low as $0.12/month at higher usage. Overage minutes are metered, so the bill tracks actual call volume instead of a fixed capacity you may not use. Compare that against one missed Friday-night order at your average ticket, and against the hourly cost of adding a dedicated phone person for peak hours only. The entry tier is the honest starting point for a single location; multi-location groups should ask for volume pricing directly."
+  - q: "Can it take phone orders accurately, including modifiers?"
+    a: "The company claims a response time under one second and reads each order back before confirming. In practice, accuracy depends on how clean your POS menu data is, because real menu items, pricing, modifiers and availability are read in real time, so a stale POS produces confidently wrong answers. Before committing, test a modifier-heavy order: no onions, extra sauce, half-and-half, a substitution. Then test a change of mind mid-order. Those two tests expose more than any scripted demo, because they are the calls your staff currently handle by asking a follow-up question."
+  - q: "Does it work after hours and on days you are closed?"
+    a: "Yes. The service answers every call 24/7, which includes the after-close window when a large share of missed calls happen: someone decides at 10pm to order for tomorrow, or tries to book a table for the weekend. Those calls currently hit voicemail or ring out. Measure your own missed-call count before assuming the after-hours window is worth automating, because the value depends on how many of those calls your restaurant actually receives. See After hour call handling for the routing patterns involved."
+  - q: "Will it connect to the POS and reservation system we already use?"
+    a: "The service connects directly with your POS, reservation platforms and phone provider, which is what allows it to quote real availability rather than a fixed script. The practical question is not whether integrations exist in general but whether yours is on the list. Check the Integrations page and confirm your specific POS and reservation platform before you evaluate pricing. If your reservation book is a paper diary, expect a different setup conversation. Multi-location groups should also confirm that each store answers with its own menu and hours rather than a shared corporate script."
+  - q: "Is it compliant enough to take payment or health information over the phone?"
+    a: "Compliance is tier-dependent. SOC 2, HIPAA & GDPR compliance sits on the Enterprise plan, not on the entry tier, so a restaurant taking card details over the phone or handling allergy and medical information needs to confirm which plan applies before comparing headline prices. Ask where call recordings are stored, who owns them, how long they are retained, and whether the voice is disclosed as automated, since some jurisdictions require that disclosure. Get the answers in writing rather than in a sales call, because these are the terms that survive after the contract is signed."
+  - q: "What happens when the AI cannot handle a call?"
+    a: "Failover is the part buyers under-test. Ask specifically where an unresolved call goes: a transfer to a manager, a callback queue, or a message. Ask what triggers that handoff, whether it is an unrecognised item, a complaint, or a language the system does not cover. Complaints and refunds should route to a human by design, not by accident. Confirm the routing rules before you go live, and run one deliberately awkward call during your trial week to watch the handoff work. A system that handles most calls well and drops the rest silently is worse than voicemail."
+---
+
+<span data-studio-release="340973632aee6b0c42c5e4fe6c26582675dbf449b4fe00be84db8c3253527b90" hidden></span>
+An answering service for restaurants picks up the calls your staff cannot: the Friday rush, the after-close order, the reservation line ringing while the host seats a party. RestaurantAnswering is an AI answering service that answers every call 24/7, takes phone orders, books reservations and manages waitlists without adding staff.
+
+The decision is not about a friendlier greeting. It is about the calls that currently ring out, hit voicemail, or get abandoned mid-ring while someone runs food.
+
+## What the service handles, call by call
+
+RestaurantAnswering answers in under a second and reads the order back before confirming, per the company's own published claims. It is a conversation, not a menu tree that makes callers press 1.
+
+The scope is the call mix a restaurant actually receives:
+
+- Phone orders, including modifiers and substitutions
+- Reservations and table bookings
+- Waitlist additions and quoted wait times
+- Menu, hours, location and parking questions
+- Catering enquiries and large-order intake
+- After-hours and closed-day coverage
+
+All of it runs on the number already printed on your menus. Callers install nothing and learn nothing new.
+
+## How it connects to your POS and reservation book
+
+The technology claim that matters most is that it connects directly with your POS, reservation platforms and phone provider. That connection separates a restaurant answering service from a voicemail box with a transcript.
+
+Because it reads real menu items, pricing, modifiers and availability in real time, it can tell a caller the soup is sold out, the 7:30 slot is gone, or the gluten-free base is available. A static script fails on the first follow-up question, and callers notice.
+
+For multi-location groups, the same connection lets each store answer with its own menu and hours instead of a shared corporate script. See [Integrations](/integrations/) for the platforms involved and [Analytics call reporting](/analytics-call-reporting/) for what comes back after the calls end.
+
+## What it costs and how the meter works
+
+Pricing is by minutes, not seats or per-call fees. Plans start at $29/month for 100 included minutes, with volume pricing as low as $0.12/month. Overages are metered, so a busy month costs more than a quiet one and you do not pay for unused capacity.
+
+Run the arithmetic on your own numbers. A single missed Friday-night order is frequently larger than a month of the entry plan. The [comparison](/comparison/) page sets the tiers side by side.
+
+## Where it fits by restaurant type
+
+Value is not uniform, and pretending otherwise wastes your evaluation time.
+
+| Situation | Does it help? | Why |
+| --- | --- | --- |
+| Quick service, high call volume | Yes, strongly | Order calls are repetitive and peak when staff are busiest |
+| Fast casual with a drive-thru | Yes | Phone overflow and drive-thru pressure land in the same hour — see [Drive thru ai](/drive-thru-ai/) |
+| Fine dining | Partly | Reservations yes; concierge tone is harder to automate — see [Fine dining](/fine-dining/) |
+| Multi-location groups | Yes | Consistent answers across stores — see [Franchise call inconsistency](/franchise-call-inconsistency/) |
+| Food truck, single operator | Yes | You are cooking; nobody is answering — see [Food truck](/food-truck/) |
+| Ghost kitchen | Yes, strongly | No front of house at all — see [Ghost kitchens](/ghost-kitchens/) |
+| Coffee shop, counter service | Marginally | Most calls are hours and location, which a recorded message covers |
+
+If your calls are mostly "are you open" and "where do I park", the value is lower. If they are orders and bookings, the value is the revenue attached to each one.
+
+## Edge cases that decide the contract
+
+Peak concurrency is the first one. Two hundred calls a day spread evenly is a different problem from forty calls in the same twenty minutes, and the second is what a dinner rush looks like. Ask how simultaneous calls are handled and whether any queue forms.
+
+Language coverage is the second. A neighbourhood with a large Spanish- or Mandarin-speaking customer base needs the system to take those orders, not transfer them. Confirm which languages are supported before you count the calls it can recover.
+
+Menu changes are the third. A daily special, a sold-out item, a seasonal price change — each has to reach the AI as fast as it reaches the POS. If your team updates availability in one system and the phone reads another, callers get yesterday's menu.
+
+## What it does not do
+
+It does not replace your POS, your reservation platform, or your staff. It does not handle cash reconciliation, refunds, or complaints that need a manager's judgement; those should route to a human, and you should confirm the routing rules before go-live.
+
+It also does not fix a menu that is wrong in your POS. Stale availability gets read back to callers at speed. Garbage in, confident garbage out.
+
+Compliance is plan-dependent: SOC 2, HIPAA & GDPR compliance sits on the Enterprise plan, not the entry tier. If you take card details over the phone or operate in a regulated context, confirm the tier before comparing headline prices.
+
+## How to evaluate it in a week
+
+Do not run a demo and decide. Run your own calls.
+
+1. Export missed and after-hours calls for seven days from your phone provider.
+2. Multiply that count by your average ticket to get your own recovery number.
+3. Ask what happens to a call the AI cannot resolve, and where it goes.
+4. Test one modifier-heavy order and one reservation change.
+5. Get the overage rate in writing before signing.
+
+Step two is the one most buyers skip, and it is the only number that tells you whether this pays for itself at your restaurant rather than at a hypothetical one.
+
+## Questions to put to any vendor
+
+Ask how the system handles a caller who changes their mind mid-order, and what the failover is when the AI is unsure. Ask whether the voice is disclosed as automated, because some jurisdictions require it. Ask who owns the call recordings and how long they are retained.
+
+For the after-hours side, [After hour call handling](/after-hour-call-handling/) covers routing patterns, and [After hours voicemail script template](/after-hours-voicemail-script-template/) is useful even if you never buy — a better voicemail recovers some of the same calls for free.

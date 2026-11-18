@@ -10,6 +10,7 @@ RestaurantAnswering is an AI answering service for restaurants that answers call
 - [Kea ai](https://restaurantanswering.com/kea-ai/)
 - [Loman AI Alternative: Restaurant Phone Answering Compared](https://restaurantanswering.com/loman-ai/): Comparing Loman AI and RestaurantAnswering for restaurant phone answering: pricing, POS connection, after-hours coverage, order accuracy and when each fits.
 - [Presto ai](https://restaurantanswering.com/presto-ai/)
+- [Restaurantanswering Comparison: Minutes, Plans, Rates](https://restaurantanswering.com/null/): A restaurantanswering comparison of what each plan includes, how per-minute billing works, and what to test before you switch your restaurant phone line.
 - [Retell ai](https://restaurantanswering.com/retell-ai/)
 - [Slang ai](https://restaurantanswering.com/slang-ai/)
 - [Sound hound ai](https://restaurantanswering.com/sound-hound-ai/)

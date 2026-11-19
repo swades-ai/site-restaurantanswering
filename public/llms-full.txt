@@ -76,6 +76,7 @@ RestaurantAnswering is an AI answering service for restaurants that answers call
 - [Privacy](https://restaurantanswering.com/privacy/)
 - [Reservation management](https://restaurantanswering.com/reservation-management/)
 - [Reservation script template](https://restaurantanswering.com/reservation-script-template/)
+- [Restaurant Answering Cost Calculator: Minutes and Plans](https://restaurantanswering.com/what-restaurants-spend-on-this-a-calculator/): Work out what an AI answering service costs your restaurant: call minutes, plan tiers, overage rates and payback, with the formula in plain words.
 - [Restaurant Integrations: POS, Reservations & Phone Systems](https://restaurantanswering.com/works-with-the-software-restaurants-already-run/): How RestaurantAnswering connects directly with your POS, reservation platforms and phone provider, what each integration does, and how setup works.
 - [Restaurant Phone Terms: Voice AI Glossary for Buyers](https://restaurantanswering.com/the-terms-restaurants-use/): Definitions of the phone, POS and voice AI terms restaurant buyers compare, from order accuracy to waitlist management, with examples for each.
 - [Restaurants Pricing: What an AI Answering Service Costs](https://restaurantanswering.com/pricing-for-restaurants/): How restaurants pricing works for AI phone answering: metered minutes, what changes the bill, what is included, and how it compares with staffing a phone line.
